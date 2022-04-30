@@ -1,0 +1,64 @@
+.quiz-container {
+    width: 60%;
+    height: 71%;
+    padding: 30px 64px;
+
+    background-color: rgb(144, 144, 200);
+}
+
+.question-label {
+    margin-bottom: 14px;
+}
+
+.question-box {
+
+    height: 100px;
+
+    background-color: azure;
+
+    margin-bottom: 30px;
+}
+
+.question-box,
+.answer-box {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 64px);
+    padding-left: 50px;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgb(111, 111, 168);
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.answer-box {
+    background-color: azure;
+
+    min-height: 72px;
+    width: calc(50% - 64px);
+    position: relative;
+}
+
+.checkboxes {
+    position: absolute;
+    left: 20px
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+
+
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+    padding-right: 50px;
+    gap: 20px
+}
