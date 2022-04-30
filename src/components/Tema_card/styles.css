@@ -1,0 +1,116 @@
+.themes-container {
+    width: 60%;
+    height: 71%;
+    padding: 30px 64px;
+
+    background-color: rgb(144, 144, 200);
+
+    position: relative;
+
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+.common-theme {
+    position: absolute;
+
+    cursor: pointer;
+    top: 315px;
+    left: 500px;
+
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.common-theme:hover {
+    transform: scale(1.1);
+}
+
+.fs-100 {
+    font-size: 18px;
+}
+
+.fs-200 {
+    font-size: 24px;
+}
+
+.fs-300 {
+    font-size: 36px;
+}
+
+.fs-400 {
+    font-size: 48px;
+}
+
+.fs-500 {
+    font-size: 56px;
+}
+
+.fs-600 {
+    font-size: 62px;
+}
+
+.fs-700 {
+    font-size: 76px;
+}
+
+
+.agua-theme {
+    top: 80px;
+    left: 450px;
+}
+
+.fauna-theme {
+    top: 150px;
+    left: 750px;
+}
+
+.flora-theme {
+    top: 200px;
+    left: 260px;
+}
+
+.compostagem-theme {
+    top: 320px;
+    left: 80px
+}
+
+.agricultura-theme {
+    top: 240px;
+    left: 420px;
+}
+
+.clima-theme {
+    top: 320px;
+    left: 540px;
+}
+
+.lixo-organico-theme {
+    top: 370px;
+    left: 820px;
+}
+
+.residuos-theme {
+    top: 570px;
+    left: 550px;
+}
+
+.meio-ambiente-theme {
+    top: 470px;
+    left: 630px;
+}
+
+.veganismo-theme {
+    top: 320px;
+    left: 780px;
+}
+
+.consumo-theme {
+    top: 410px;
+    left: 200px;
+}
+
+.pecuaria-theme {
+    top: 470px;
+    left: 300px;
+}
