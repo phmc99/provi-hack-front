@@ -3,13 +3,17 @@
     height: 71%;
     padding: 30px 64px;
 
-    background-color: rgb(144, 144, 200);
+    background-color: rgba(86, 150, 2, 1);
 
     position: relative;
 
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 
+}
+
+h3 {
+    font-family: 'Goldman', cursive;
 }
 
 .common-theme {
@@ -19,11 +23,15 @@
     top: 315px;
     left: 500px;
 
+    color: rgb(255, 248, 201);
+
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .common-theme:hover {
     transform: scale(1.1);
+    color: rgba(18, 19, 44, 1);
+
 }
 
 .fs-100 {

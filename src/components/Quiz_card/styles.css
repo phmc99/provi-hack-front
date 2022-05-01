@@ -1,22 +1,31 @@
 .quiz-container {
     width: 60%;
-    height: 71%;
+    height: 80%;
     padding: 30px 64px;
 
-    background-color: rgb(144, 144, 200);
+    background-color: rgba(31, 32, 65, 1);
+
+
+}
+
+.card-label,
+.question-label {
+    font-family: 'Goldman', cursive;
 }
 
 .question-label {
     margin-bottom: 14px;
+
 }
 
 .question-box {
-
     height: 100px;
+    padding-left: 50px;
 
-    background-color: azure;
+    background-color: whitesmoke;
 
     margin-bottom: 30px;
+    font-size: 22px;
 }
 
 .question-box,
@@ -24,10 +33,10 @@
     display: flex;
     align-items: center;
     width: calc(50% - 64px);
-    padding-left: 50px;
+    font-family: 'Roboto', sans-serif;
 
     border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px rgb(111, 111, 168);
+    box-shadow: 1px 1px 5px 1px rgb(44, 77, 1);
 }
 
 .answers {
@@ -38,16 +47,15 @@
 }
 
 .answer-box {
-    background-color: azure;
-
+    background-color: whitesmoke;
     min-height: 72px;
     width: calc(50% - 64px);
     position: relative;
 }
 
-.checkboxes {
+.MuiRadio-root {
     position: absolute;
-    left: 20px
+    left: 2px
 }
 
 .buttons {
@@ -57,8 +65,32 @@
 
     align-items: center;
     justify-content: flex-end;
-    margin-top: 15px;
+    margin-top: 30px;
 
-    padding-right: 50px;
+    padding-right: 30px;
     gap: 20px
+}
+
+
+
+.answer-btn,
+.back-btn {
+    height: 60px;
+    width: 180px;
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+
+    background-color: rgb(51, 2, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.answer-btn:hover,
+.back-btn:hover {
+    transform: scale(1.1);
 }

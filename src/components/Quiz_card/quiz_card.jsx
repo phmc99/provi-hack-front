@@ -1,6 +1,9 @@
 import './styles.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import CustomRadioBtn from '../Custom_Radio_Button/custom_radio_btn'
+import confirmAnswer from '../../assets/confirm-answer-2.svg'
+import backArrow from '../../assets/back-arrow.svg'
 
 export default function QuizCard() {
     const navigate = useNavigate()
@@ -13,6 +16,7 @@ export default function QuizCard() {
     }
 
     function handleChooseAnswer(e) {
+        console.log(e.target.value);
         setAnswer(e.target.value);
     }
 
@@ -27,61 +31,73 @@ export default function QuizCard() {
             className='quiz-container'
             onSubmit={(e) => handleAnswer(e)}
         >
+            <h3 className='card-label'>#Game Quiz</h3>
             <h1 className='question-label'>Pergunta #n</h1>
             <div className='question-box'>Pergunta a ser feita?</div>
             <div className='answers'>
                 <div className='answer-box'>
-                    <label>
-                        <input
-                            type={'radio'}
-                            className='checkboxes'
+                    <label className='checkboxes'>
+                        <CustomRadioBtn
                             value='Resposta 1'
+                            labelForRadio='Resposta 1'
                             name='answer'
-                            onChange={(e) => handleChooseAnswer(e)}
+                            handleChooseAnswer={handleChooseAnswer}
+                            answer={answer}
                         />
                         Resposta 1
                     </label>
                 </div>
                 <div className='answer-box'>
-                    <label>
-                        <input
-                            type={'radio'}
-                            className='checkboxes'
+                    <label className='checkboxes'>
+                        <CustomRadioBtn
                             value='Resposta 2'
+                            labelForRadio='Resposta 2'
                             name='answer'
-                            onChange={(e) => handleChooseAnswer(e)} />
+                            handleChooseAnswer={handleChooseAnswer}
+                            answer={answer}
+                        />
                         Resposta 2
                     </label>
                 </div>
                 <div className='answer-box'>
-                    <label>
-                        <input
-                            type={'radio'}
-                            className='checkboxes'
+                    <label className='checkboxes'>
+                        <CustomRadioBtn
                             value='Resposta 3'
+                            labelForRadio='Resposta 3'
                             name='answer'
-                            onChange={(e) => handleChooseAnswer(e)} />
+                            handleChooseAnswer={handleChooseAnswer}
+                            answer={answer}
+                        />
                         Resposta 3
                     </label>
                 </div>
                 <div className='answer-box'>
-                    <label>
-                        <input
-                            type={'radio'}
-                            className='checkboxes'
+                    <label className='checkboxes'>
+                        <CustomRadioBtn
                             value='Resposta 4'
+                            labelForRadio='Resposta 4'
                             name='answer'
-                            onChange={(e) => handleChooseAnswer(e)} />
+                            handleChooseAnswer={handleChooseAnswer}
+                            answer={answer}
+                        />
                         Resposta 4
                     </label>
                 </div>
             </div>
             <div className='buttons'>
-                <button type='sumbmit'>Responder</button>
+                <button
+                    className='answer-btn'
+                    type='submit'
+                >
+                    <img src={confirmAnswer} style={{ width: 30 }} alt='confirm' />
+                    Responder</button>
                 <button
                     type='button'
+                    className='back-btn'
                     onClick={() => handleBack()}
-                >Mudar de tema</button>
+                >
+                    <img src={backArrow} style={{ width: 20 }} alt='back' />
+                    Mudar de tema</button>
             </div>
         </form>
     )

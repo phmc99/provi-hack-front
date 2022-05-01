@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './styles.css'
 
-export default function TemaCard() {
+export default function ThemeCard() {
 
     useEffect(() => {
         const themes = document.querySelectorAll('#themes')
@@ -25,6 +25,7 @@ export default function TemaCard() {
     return (
         <>
             <div className='themes-container'>
+                <h3>#Escolha um tema</h3>
                 <a className='common-theme fs-700' id='themes'>Água</a>
                 <a className='common-theme fs-600' id='themes'>Fauna</a>
                 <a className='common-theme fs-500' id='themes'>Flora</a>
