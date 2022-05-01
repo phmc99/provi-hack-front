@@ -2,17 +2,17 @@ import './styles.css'
 
 export default function Ongs_circle({ cia }) {
 
-    function handleChooseOng() {
-        console.log(`link da ONG ${cia.name}`);
-    }
-
     return (
-        <div
+
+        <a
             className='ong-card'
-            onClick={() => handleChooseOng()}
+            id='ong-card'
+            href={cia.link}
+            target="_blank"
         >
             <img className='ong-image' src={cia.image} />
             <span className='ong-name'>{cia.name}</span>
-        </div>
+        </a>
+
     )
 }

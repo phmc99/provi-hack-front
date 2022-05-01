@@ -1,54 +1,68 @@
-import icmbio from './assets/ICMBIO.jpg'
+import icmbio from './assets/ICMBio_3.png'
 import wffBrasil from './assets/WFF_Brasil.jpg'
 import greenPeace from './assets/Green_Peace.jpg'
 import liveMore from './assets/livemoretravelmore.jpg'
 import atados from './assets/atados.png'
+import rachacuca from './assets/rachacuca-logo.png'
+import pindorama from './assets/pindorama.jpeg'
+import worldpackers from './assets/worldpackers.png'
+import fgb from './assets/fgb.png'
+import tamar from './assets/tamar.jpeg'
 
 const fakeCompaniesArray = [
     {
         id: 1,
         image: icmbio,
-        name: 'ICMBIO'
+        name: 'ICMBIO',
+        link: 'https://www.icmbio.gov.br/portal/'
     },
     {
         id: 2,
         image: wffBrasil,
-        name: 'WFF Brasil'
+        name: 'WFF Brasil',
+        link: 'https://www.wwf.org.br/'
     },
     {
         id: 3,
         image: greenPeace,
-        name: 'Green Peace'
+        name: 'Green Peace',
+        link: 'https://www.greenpeace.org/brasil/'
     },
     {
         id: 4,
         image: atados,
-        name: 'Atados'
+        name: 'Atados',
+        link: 'https://www.atados.com.br'
     },
     {
         id: 5,
-        image: liveMore,
-        name: 'Live More Travel More'
+        image: tamar,
+        name: 'Projeto Tamar',
+        link: 'https://www.tamar.org.br'
     },
     {
         id: 6,
-        image: icmbio,
-        name: 'ICMBIO'
+        image: fgb,
+        name: 'Fundação Grupo Boticário',
+        link: 'https://www.fundacaogrupoboticario.org.br'
     },
     {
         id: 7,
-        image: wffBrasil,
-        name: 'WFF Brasil'
+        image: worldpackers,
+        name: 'Worldpackers',
+        link: 'https://www.worldpackers.com'
     },
     {
         id: 8,
-        image: greenPeace,
-        name: 'Green Peace'
+        image: pindorama,
+        name: 'Instituto Pindorama',
+        link: 'https://pindorama.org.br/#'
     },
     {
         id: 9,
-        image: atados,
-        name: 'Atados'
+        image: rachacuca,
+        name: 'RachaCuca',
+        link: 'https://rachacuca.com.br/quiz/67283/reciclagem-i/'
     }
 ]
 

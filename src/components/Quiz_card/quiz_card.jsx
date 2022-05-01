@@ -1,5 +1,5 @@
 import './styles.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import CustomRadioBtn from '../Custom_Radio_Button/custom_radio_btn'
 import confirmAnswer from '../../assets/confirm-answer-2.svg'
@@ -26,12 +26,21 @@ export default function QuizCard() {
         console.log(answer);
     }
 
+    useEffect(() => {
+        const cardLabel = document.querySelector('#card-label')
+
+        cardLabel.classList.add('new-margin')
+
+        return () => {
+        }
+    }, [])
+
     return (
         <form
             className='quiz-container'
             onSubmit={(e) => handleAnswer(e)}
         >
-            <h3 className='card-label'>#Game Quiz</h3>
+            <h3 className='card-label' id='card-label'>#Game Quiz</h3>
             <h1 className='question-label'>Pergunta #n</h1>
             <div className='question-box'>Pergunta a ser feita?</div>
             <div className='answers'>
@@ -89,14 +98,12 @@ export default function QuizCard() {
                     className='answer-btn'
                     type='submit'
                 >
-                    <img src={confirmAnswer} style={{ width: 30 }} alt='confirm' />
                     Responder</button>
                 <button
                     type='button'
                     className='back-btn'
                     onClick={() => handleBack()}
                 >
-                    <img src={backArrow} style={{ width: 20 }} alt='back' />
                     Mudar de tema</button>
             </div>
         </form>

@@ -3,7 +3,14 @@
     height: 71%;
     padding: 30px 64px;
 
-    background-color: rgba(86, 150, 2, 1);
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.7)), url('../../assets/Background-themes.jpeg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
 
     position: relative;
 
@@ -12,8 +19,23 @@
 
 }
 
-h3 {
+.label-h3 {
     font-family: 'Goldman', cursive;
+    background-color: rgba(15, 4, 27, 1);
+    display: flex;
+    width: 40%;
+    color: rgb(229, 229, 229);
+
+    margin-left: -200px;
+    padding-left: 64px;
+
+    font-size: 32px;
+    transition: all 10s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.new-margin {
+    margin-left: -64px;
 }
 
 .common-theme {
@@ -23,15 +45,19 @@ h3 {
     top: 315px;
     left: 500px;
 
-    color: rgb(255, 248, 201);
+    color: rgb(229, 229, 229);
 
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .common-theme:hover {
     transform: scale(1.1);
-    color: rgba(18, 19, 44, 1);
-
+    color: rgba(229, 229, 229, 1);
+    -webkit-text-stroke: 1px rgb(151, 0, 200);
+    text-shadow:
+        0 0 7px #9700c8,
+        0 0 12px #9700c8,
+        0 0 21px #9700c8
 }
 
 .fs-100 {

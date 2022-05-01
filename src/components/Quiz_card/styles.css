@@ -3,9 +3,28 @@
     height: 80%;
     padding: 30px 64px;
 
-    background-color: rgba(31, 32, 65, 1);
+    background-color: rgba(229, 229, 229, 1);
 
 
+}
+
+.card-label {
+    font-family: 'Goldman', cursive;
+    background-color: rgba(15, 4, 27, 1);
+    display: flex;
+    width: 40%;
+    color: rgb(229, 229, 229);
+
+    margin-left: -200px;
+    padding-left: 64px;
+
+    font-size: 32px;
+    transition: all 10s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.new-margin {
+    margin-left: -64px;
 }
 
 .card-label,
@@ -36,7 +55,7 @@
     font-family: 'Roboto', sans-serif;
 
     border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px rgb(44, 77, 1);
+    box-shadow: 5px 5px 5px 1px rgb(44, 77, 1);
 }
 
 .answers {
@@ -72,7 +91,6 @@
 }
 
 
-
 .answer-btn,
 .back-btn {
     height: 60px;
@@ -88,9 +106,15 @@
     gap: 10px;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+    font-family: 'Goldman', cursive;
+
 }
 
 .answer-btn:hover,
 .back-btn:hover {
     transform: scale(1.1);
+    text-shadow:
+        0 0 7px #9700c8,
+        0 0 12px #9700c8,
+        0 0 21px #9700c8;
 }
