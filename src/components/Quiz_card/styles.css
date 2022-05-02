@@ -1,0 +1,212 @@
+.quiz-container,
+.results-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+    padding: 30px 64px;
+
+    background-color: rgba(229, 229, 229, 1);
+}
+
+.results-container {
+    font-family: 'Goldman', cursive;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.7)), url('../../assets/Background-themes.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 300px;
+}
+
+.current-theme-final {
+    font-size: 72px;
+    color: rgb(229, 229, 229);
+}
+
+.fixed-final-text {
+    font-size: 36px;
+    color: white;
+}
+
+.final-text {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    font-size: 50px;
+    animation: text-final-move 5s infinite;
+    animation-direction: alternate;
+    color: rgba(229, 229, 229, 1);
+    -webkit-text-stroke: 1px rgb(151, 0, 200);
+    text-shadow:
+        0 0 7px #9700c8,
+        0 0 0 #9700c8,
+        0 0 0 #9700c8
+}
+
+@keyframes text-final-move {
+    0% {
+        transform: scale(1.0);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.0);
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.card-label {
+    font-family: 'Goldman', cursive;
+    background-color: rgba(15, 4, 27, 1);
+    display: flex;
+    width: 33%;
+    color: rgb(229, 229, 229);
+
+    margin-left: -200px;
+    padding-left: 64px;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    font-size: 32px;
+    transition: all 10s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.new-margin {
+    margin-left: -64px;
+}
+
+.card-label,
+.question-label {
+    font-family: 'Goldman', cursive;
+}
+
+.question-label {
+    margin-bottom: 14px;
+
+}
+
+.question-container,
+.answer-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.question-box,
+.answer-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+    min-width: calc(50% - 64px);
+    padding-right: 30px;
+    padding-left: 50px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 1px rgb(44, 77, 1);
+
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+
+}
+
+.question-box {
+    min-height: 100px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+}
+
+.answer-box {
+    min-height: 72px;
+
+    margin-bottom: 5px;
+
+    font-size: 18px;
+    position: relative
+}
+
+.span-box {
+    width: calc(50%-64px);
+    flex-grow: 1;
+}
+
+
+.MuiRadio-root {
+    position: absolute;
+    left: 2px
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+
+
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+
+    padding-right: 30px;
+    gap: 20px
+}
+
+
+.answer-btn,
+.back-btn {
+    height: 60px;
+    width: 180px;
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+
+    background-color: rgb(51, 2, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    font-family: 'Goldman', cursive;
+
+}
+
+.answer-btn:hover,
+.back-btn:hover {
+    transform: scale(1.1);
+    text-shadow:
+        0 0 7px #9700c8,
+        0 0 12px #9700c8,
+        0 0 21px #9700c8;
+}
