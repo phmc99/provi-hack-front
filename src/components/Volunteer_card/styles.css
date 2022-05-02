@@ -42,13 +42,16 @@
     align-items: center;
     background-color: rgba(15, 4, 27, 1);
     display: flex;
-    width: 50%;
+    width: 53%;
     color: rgb(229, 229, 229);
 
     margin-left: -200px;
     padding-left: 64px;
-    padding-right: 5px;
+    padding-right: 35px;
     padding-bottom: 5px;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 
     font-size: 32px;
     transition: all 10s cubic-bezier(0.075, 0.82, 0.165, 1);

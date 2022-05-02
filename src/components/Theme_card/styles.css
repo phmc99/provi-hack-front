@@ -23,11 +23,14 @@
     font-family: 'Goldman', cursive;
     background-color: rgba(15, 4, 27, 1);
     display: flex;
-    width: 40%;
+    width: 42%;
     color: rgb(229, 229, 229);
 
     margin-left: -200px;
     padding-left: 64px;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 
     font-size: 32px;
     transition: all 10s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -41,14 +44,21 @@
 .common-theme {
     position: absolute;
 
+    background-color: transparent;
+    border: none;
+
+
     cursor: pointer;
     top: 315px;
     left: 500px;
 
     color: rgb(229, 229, 229);
 
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
+
+
 
 .common-theme:hover {
     transform: scale(1.1);
@@ -92,59 +102,417 @@
 .agua-theme {
     top: 80px;
     left: 450px;
+    animation: agua-move 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes agua-move {
+    0% {
+        top: 80px;
+        left: 450px;
+    }
+
+    25% {
+        top: 82px;
+        left: 452px
+    }
+
+    50% {
+        top: 84px;
+        left: 453px;
+    }
+
+    75% {
+        top: 82px;
+        left: 451px
+    }
+
+    100% {
+        top: 80px;
+        left: 450px;
+    }
 }
 
 .fauna-theme {
     top: 150px;
     left: 750px;
+    animation: fauna-move 3s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes fauna-move {
+    0% {
+        top: 150px;
+        left: 750px;
+    }
+
+    25% {
+        top: 152px;
+        left: 748px
+    }
+
+    50% {
+        top: 150px;
+        left: 746px;
+    }
+
+    75% {
+        top: 148px;
+        left: 748px
+    }
+
+    100% {
+        top: 150px;
+        left: 750px;
+    }
+}
+
 
 .flora-theme {
     top: 200px;
     left: 260px;
+    animation: flora-move 4s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes flora-move {
+    0% {
+        top: 200px;
+        left: 260x;
+    }
+
+    25% {
+        top: 197px;
+        left: 258px
+    }
+
+    50% {
+        top: 200px;
+        left: 256px;
+    }
+
+    75% {
+        top: 202px;
+        left: 258px
+    }
+
+    100% {
+        top: 200px;
+        left: 260px;
+    }
+}
+
 
 .compostagem-theme {
     top: 320px;
-    left: 80px
+    left: 80px;
+    animation: compostagem-move 2s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes compostagem-move {
+    0% {
+        top: 320px;
+        left: 80px;
+    }
+
+    25% {
+        top: 321px;
+        left: 79px
+    }
+
+    50% {
+        top: 320px;
+        left: 78px;
+    }
+
+    75% {
+        top: 319px;
+        left: 79px
+    }
+
+    100% {
+        top: 320px;
+        left: 80px;
+    }
+}
+
 
 .agricultura-theme {
     top: 240px;
     left: 420px;
+    animation: agricultura-move 3s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes agricultura-move {
+    0% {
+        top: 240px;
+        left: 420px;
+    }
+
+    25% {
+        top: 244px;
+        left: 423px
+    }
+
+    50% {
+        top: 242px;
+        left: 425px;
+    }
+
+    75% {
+        top: 239px;
+        left: 422px
+    }
+
+    100% {
+        top: 240px;
+        left: 420px;
+    }
+}
+
 
 .clima-theme {
     top: 320px;
     left: 540px;
+    animation: clima-move 4s infinite;
+    animation-direction: alternate;
 }
 
-.lixo-organico-theme {
+@keyframes clima-move {
+    0% {
+        top: 320px;
+        left: 540px;
+    }
+
+    25% {
+        top: 318px;
+        left: 539px
+    }
+
+    50% {
+        top: 320px;
+        left: 538px;
+    }
+
+    75% {
+        top: 323px;
+        left: 539px
+    }
+
+    100% {
+        top: 321px;
+        left: 541px;
+    }
+}
+
+
+.energia-theme {
     top: 370px;
     left: 820px;
+    animation: energia-move 2s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes energia-move {
+    0% {
+        top: 370px;
+        left: 820px;
+    }
+
+    25% {
+        top: 371px;
+        left: 820px
+    }
+
+    50% {
+        top: 371px;
+        left: 821px;
+    }
+
+    75% {
+        top: 370px;
+        left: 821px
+    }
+
+    100% {
+        top: 370px;
+        left: 820px;
+    }
+}
+
 
 .residuos-theme {
     top: 570px;
     left: 550px;
+    animation: residuos-move 3s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes residuos-move {
+    0% {
+        top: 570px;
+        left: 550px;
+    }
+
+    25% {
+        top: 567px;
+        left: 553px
+    }
+
+    50% {
+        top: 570px;
+        left: 556px;
+    }
+
+    75% {
+        top: 573px;
+        left: 553px
+    }
+
+    100% {
+        top: 570px;
+        left: 550px;
+    }
+}
+
 
 .meio-ambiente-theme {
     top: 470px;
     left: 630px;
+    animation: ambiente-move 4s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes ambiente-move {
+    0% {
+        top: 470px;
+        left: 630px;
+    }
+
+    25% {
+        top: 471px;
+        left: 627px
+    }
+
+    50% {
+        top: 472px;
+        left: 625px;
+    }
+
+    75% {
+        top: 471px;
+        left: 628px
+    }
+
+    100% {
+        top: 470px;
+        left: 630px;
+    }
+}
+
 
 .veganismo-theme {
     top: 320px;
     left: 780px;
+    animation: veganismo-move 5s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes veganismo-move {
+    0% {
+        top: 320px;
+        left: 780px;
+    }
+
+    25% {
+        top: 325px;
+        left: 782px
+    }
+
+    50% {
+        top: 320px;
+        left: 784px;
+    }
+
+    75% {
+        top: 318px;
+        left: 782px
+    }
+
+    100% {
+        top: 322px;
+        left: 780px;
+    }
+}
+
 
 .consumo-theme {
     top: 410px;
     left: 200px;
+    animation: consumo-move 2s infinite;
+    animation-direction: alternate;
 }
+
+@keyframes consumo-move {
+    0% {
+        top: 410px;
+        left: 200px;
+    }
+
+    25% {
+        top: 411px;
+        left: 199px
+    }
+
+    50% {
+        top: 412px;
+        left: 200px;
+    }
+
+    75% {
+        top: 411px;
+        left: 201px
+    }
+
+    100% {
+        top: 410px;
+        left: 200px;
+    }
+}
+
 
 .pecuaria-theme {
     top: 470px;
     left: 300px;
+    animation: pecuaria-move 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pecuaria-move {
+    0% {
+        top: 470px;
+        left: 300px;
+    }
+
+    25% {
+        top: 472px;
+        left: 299px
+    }
+
+    50% {
+        top: 470px;
+        left: 298px;
+    }
+
+    75% {
+        top: 469px;
+        left: 299px
+    }
+
+    100% {
+        top: 470px;
+        left: 300px;
+    }
 }

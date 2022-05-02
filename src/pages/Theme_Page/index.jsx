@@ -10,4 +10,3 @@ const Theme_Page = () => {
   )
 }
 
-export default Theme_Page

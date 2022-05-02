@@ -1,7 +1,20 @@
 import { useEffect } from 'react'
 import './styles.css'
+import quizArray from '../../fakeQuestionArray'
 
-export default function ThemeCard() {
+export default function ThemeCard({ currentQuiz, setCurrentQuiz }) {
+
+    function handleChooseTheme(e) {
+        const choosenTheme = quizArray.find((theme) => {
+            return theme.idQuiz === parseInt(e.target.value)
+        })
+
+        if (choosenTheme) {
+            setCurrentQuiz(choosenTheme)
+        }
+
+    }
+
 
     useEffect(() => {
         const themes = document.querySelectorAll('#themes')
@@ -13,7 +26,7 @@ export default function ThemeCard() {
         themes[3].classList.add('compostagem-theme')
         themes[4].classList.add('agricultura-theme')
         themes[5].classList.add('residuos-theme')
-        themes[6].classList.add('lixo-organico-theme')
+        themes[6].classList.add('energia-theme')
         themes[7].classList.add('clima-theme')
         themes[8].classList.add('meio-ambiente-theme')
         themes[9].classList.add('veganismo-theme')
@@ -28,18 +41,66 @@ export default function ThemeCard() {
         <>
             <div className='themes-container'>
                 <h3 className='label-h3' id='label-h3'>#Escolha um tema</h3>
-                <h2 className='common-theme fs-700' id='themes'>Água</h2>
-                <h2 className='common-theme fs-600' id='themes'>Fauna</h2>
-                <h2 className='common-theme fs-500' id='themes'>Flora</h2>
-                <h2 className='common-theme fs-400' id='themes'>Compostagem</h2>
-                <h2 className='common-theme fs-600' id='themes'>Agricultura</h2>
-                <h2 className='common-theme fs-400' id='themes'>Resíduos</h2>
-                <h2 className='common-theme fs-300' id='themes'>Lixo Orgânico</h2>
-                <h2 className='common-theme fs-700' id='themes'>Clima</h2>
-                <h2 className='common-theme fs-300' id='themes'>Meio Ambiente</h2>
-                <h2 className='common-theme fs-200' id='themes'>Veganismo</h2>
-                <h2 className='common-theme fs-400' id='themes'>Consumo</h2>
-                <h2 className='common-theme fs-500' id='themes'>Pecuária</h2>
+                <button className='common-theme fs-700' id='themes' value='1'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Água
+                </button>
+                <button className='common-theme fs-600' id='themes' value='2'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Fauna
+                </button>
+                <button className='common-theme fs-500' id='themes' value='3'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Flora
+                </button>
+                <button className='common-theme fs-400' id='themes' value='4'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Compostagem
+                </button>
+                <button className='common-theme fs-600' id='themes' value='5'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Agricultura
+                </button>
+                <button className='common-theme fs-400' id='themes' value='6'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Resíduos
+                </button>
+                <button className='common-theme fs-300' id='themes' value='7'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Energia
+                </button>
+                <button className='common-theme fs-700' id='themes' value='8'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Clima
+                </button>
+                <button className='common-theme fs-300' id='themes' value='9'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Meio Ambiente
+                </button>
+                <button className='common-theme fs-200' id='themes' value='10'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Veganismo
+                </button>
+                <button className='common-theme fs-400' id='themes' value='11'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Consumo
+                </button>
+                <button className='common-theme fs-500' id='themes' value='12'
+                    onClick={(e) => handleChooseTheme(e)}
+                >
+                    Pecuária
+                </button>
             </div>
         </>
     )

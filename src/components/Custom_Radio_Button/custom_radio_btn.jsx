@@ -1,22 +1,24 @@
 import * as React from 'react';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControl from '@mui/material/FormControl'
 import Radio from '@mui/material/Radio';
-import FormControlLabel from '@mui/material/FormControlLabel';
+import { useEffect } from 'react';
 
-export default function CustomRadioBtn({ labelForRadio, handleChooseAnswer, answer }) {
+export default function CustomRadioBtn({ answerForRadio, handleChooseAnswer, answer, whichQuestion }) {
+
+    useEffect(() => {
+        return () => {
+        }
+    }, [whichQuestion])
 
     return (
         <Radio
-            checked={answer === labelForRadio}
+            checked={answer === answerForRadio}
             onChange={handleChooseAnswer}
-            value={labelForRadio}
+            value={answerForRadio}
             name='radio-answering-btns'
             sx={{
                 '& .MuiSvgIcon-root': {
-                    fontSize: 32,
                     color: 'green'
-                },
+                }
             }}
         />
     );

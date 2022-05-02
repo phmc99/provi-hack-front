@@ -1,11 +1,14 @@
 import { useState } from "react";
 
 function usePageProvider() {
-    const [checked, setChecked] = useState(false)
+    const [currentQuiz, setCurrentQuiz] = useState('')
+    const [isQuiz, setIsQuiz] = useState(true)
 
     return {
-        checked,
-        setChecked
+        currentQuiz,
+        setCurrentQuiz,
+        isQuiz,
+        setIsQuiz
     }
 }
 
